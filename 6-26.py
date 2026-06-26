@@ -11,14 +11,16 @@ def check_pwd():
     if len(passward)>=6 :
         cou=0
         for i in passward:
-            if passward.isdigit():
+            if i.isdigit():
                 cou=1
                 break
 
 
 
+
         if cou==1:
             print("密码合格")
+        else:print("密码缺乏数字")
     else:print("密码长度不够")
 
 check_pwd()
